@@ -1,0 +1,55 @@
+.recommended {
+  width: 97%;
+  margin: 40px auto;
+  background: #fff;
+  box-shadow: 1px 1px 1px #969696;
+  height: 60px;
+  padding-left: 40px;
+  border-radius: 4px;
+  h6 {
+    font-size: 1.2em;
+    margin-top: 20px;
+    color: darken($main-font-color, 30%);
+  }
+  .card-row {
+    margin-top: 40px;
+    .card {
+      border-radius: 4px;
+      background: #fff;
+      box-shadow: 1px 1px 1px #969696;
+      width: 350px;
+      img {
+        width: 100%;
+        height: 245px;
+        border-radius: 4px;
+      }
+      h4 {
+        color: darken($main-font-color, 30%);
+        font-weight: 700;
+      }
+      a {
+        font-weight: 700;
+      }
+      .card-block {
+        padding: 15px;
+      }
+    }
+  }
+  .button-row {
+    button {
+      height: 60px;
+      width: 300px;
+      background: #fff;
+      border: 1px solid #d8d8d8;
+      border-radius: 4px;
+      color: $accent-color;
+      box-shadow: 1px 1px 1px #969696;
+      margin-top: 60px;
+      font-weight: 700;
+      font-size: 1.1em;
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}
