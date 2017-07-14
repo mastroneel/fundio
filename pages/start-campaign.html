@@ -6,13 +6,9 @@
     <title>Sign In/Sign Up</title>
   </head>
   <body>
-    <!-- Button trigger modal -->
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#signUpModal">
-      Launch demo modal
-    </button>
 
     <!-- Modal -->
-    <div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade in" id="signUpModal" tabindex="-1" role="dialog">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
@@ -34,9 +30,10 @@
         </div>
       </div>
     </div>
+    <div class="modal-backdrop fade in"></div>
 
 <!-- Sign up with email modal -->
-<div class="modal fade" id="modal-b" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="modal-b" tabindex="-1" role="dialog">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -75,7 +72,7 @@
 
 <script type="text/javascript">
 $(document).ready(function() {
-  $(window).on('load',function(){
+  $(window).on('load', function(){
       $('#signUpModal').modal('show');
   });
 });

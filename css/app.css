@@ -8334,6 +8334,9 @@ footer {
     footer ul li {
       margin-top: 10px; }
 
+.modal.in {
+  display: block; }
+
 .modal {
   text-align: center;
   border-radius: 4px; }
