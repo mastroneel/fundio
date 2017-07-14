@@ -2,14 +2,15 @@
   width: 97%;
   margin: 0 auto;
   height: 80vh;
+  overflow: hidden;
   background:
-      -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.3)),
+      -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.7)),
       url('../img/fundio-1.jpg');
   background:
-      -o-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.3)),
+      -o-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.7)),
       url('../img/fundio-1.jpg');
   background:
-      linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.3)),
+      linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.7)),
       url('../img/fundio-1.jpg');
   background-size: cover;
   text-align: center;
@@ -22,22 +23,36 @@
       outline: none;
     }
   }
+  h2 {
+    float: left;
+    text-align: left;
+    font-weight: 700;
+    font-size: 4em;
+    color: $accent-color;
+    margin-top: 30vh;
+    margin-left: 30px;
+    margin-bottom: 30px;
+  }
   button {
-    margin-top: 50vh;
+    float: left;
     background: $accent-color;
     border: 1px solid $accent-color;
     color: #fff;
     font-family: $main-font;
     font-size: 1.5em;
+    margin-left: 30px;
+    margin-bottom: 20px;
   }
   input {
-    border: none;
+    float: left;
+    border: 2px solid $main-font-color;
+    background: transparent;
     padding-left: 15px;
     font-size: 1.5em;
     color: #888;
+    margin-left: 30px;
   }
 }
-
 .sub-hero {
   width: 97%;
   margin: 0 auto;

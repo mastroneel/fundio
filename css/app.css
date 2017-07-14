@@ -8219,9 +8219,10 @@ h1, h1, h3, h4, h5, h6, p {
   width: 97%;
   margin: 0 auto;
   height: 80vh;
-  background: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.3)), url("../img/fundio-1.jpg");
-  background: -o-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.3)), url("../img/fundio-1.jpg");
-  background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.3)), url("../img/fundio-1.jpg");
+  overflow: hidden;
+  background: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.7)), url("../img/fundio-1.jpg");
+  background: -o-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.7)), url("../img/fundio-1.jpg");
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.7)), url("../img/fundio-1.jpg");
   background-size: cover;
   text-align: center; }
   .hero button, .hero input {
@@ -8231,18 +8232,32 @@ h1, h1, h3, h4, h5, h6, p {
     border-radius: 4px; }
     .hero button:focus, .hero input:focus {
       outline: none; }
+  .hero h2 {
+    float: left;
+    text-align: left;
+    font-weight: 700;
+    font-size: 4em;
+    color: #0ea77b;
+    margin-top: 30vh;
+    margin-left: 30px;
+    margin-bottom: 30px; }
   .hero button {
-    margin-top: 50vh;
+    float: left;
     background: #0ea77b;
     border: 1px solid #0ea77b;
     color: #fff;
     font-family: "Open Sans", sans-serif;
-    font-size: 1.5em; }
+    font-size: 1.5em;
+    margin-left: 30px;
+    margin-bottom: 20px; }
   .hero input {
-    border: none;
+    float: left;
+    border: 2px solid #888;
+    background: transparent;
     padding-left: 15px;
     font-size: 1.5em;
-    color: #888; }
+    color: #888;
+    margin-left: 30px; }
 
 .sub-hero {
   width: 97%;
@@ -8273,6 +8288,7 @@ h1, h1, h3, h4, h5, h6, p {
   .recommended .card-row {
     margin-top: 40px; }
     .recommended .card-row .card {
+      margin-top: 20px;
       border-radius: 4px;
       background: #fff;
       box-shadow: 1px 1px 1px #969696;
@@ -8288,6 +8304,14 @@ h1, h1, h3, h4, h5, h6, p {
         font-weight: 700; }
       .recommended .card-row .card .card-block {
         padding: 15px; }
+      .recommended .card-row .card .progress-bar {
+        height: 0px;
+        width: 175px;
+        float: left;
+        border-top: 6px solid #0ea77b;
+        position: absolute;
+        top: 264px;
+        left: 15px; }
   .recommended .button-row button {
     height: 60px;
     width: 300px;
