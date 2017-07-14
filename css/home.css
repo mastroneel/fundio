@@ -8,11 +8,11 @@ Error: Undefined variable: "$main-font-color".
 10:     font-size: 1.2em;
 11:     margin-top: 20px;
 12:     color: darken($main-font-color, 30%);
-13:   }
-14:   .card-row {
-15:     margin-top: 40px;
-16:     .card {
-17:       border-radius: 4px;
+13:     font-weight: 700;
+14:   }
+15:   .card-row {
+16:     margin-top: 40px;
+17:     .card {
 
 Backtrace:
 /Users/laurenmastroni/Code/Sites/fundio/sass/home.scss:12
@@ -81,4 +81,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$main-font-color\".\A         on line 12 of /Users/laurenmastroni/Code/Sites/fundio/sass/home.scss\A \A 7:   padding-left: 40px;\A 8:   border-radius: 4px;\A 9:   h6 {\A 10:     font-size: 1.2em;\A 11:     margin-top: 20px;\A 12:     color: darken($main-font-color, 30%);\A 13:   }\A 14:   .card-row {\A 15:     margin-top: 40px;\A 16:     .card {\A 17:       border-radius: 4px;"; }
+  content: "Error: Undefined variable: \"$main-font-color\".\A         on line 12 of /Users/laurenmastroni/Code/Sites/fundio/sass/home.scss\A \A 7:   padding-left: 40px;\A 8:   border-radius: 4px;\A 9:   h6 {\A 10:     font-size: 1.2em;\A 11:     margin-top: 20px;\A 12:     color: darken($main-font-color, 30%);\A 13:     font-weight: 700;\A 14:   }\A 15:   .card-row {\A 16:     margin-top: 40px;\A 17:     .card {"; }
