@@ -1,10 +1,115 @@
 .modal {
+  text-align: center;
+  border-radius: 4px;
   .modal-content {
-    .sign-in-logo {
-      font-family: $logo-font;
-      font-size: 3em;
-      margin-left: 40px;
-      color: $accent-color;
+    .modal-header {
+      .sign-in-logo {
+        font-family: $logo-font;
+        font-size: 3em;
+        margin-left: 40px;
+        color: $accent-color;
+      }
     }
+    .modal-body {
+      background-color: $background-color;
+      padding-top: 50px;
+      padding-bottom: 80px;
+      .facebook-button {
+        height: 60px;
+        width: 340px;
+        background: #3b5998;
+        border: 1px solid #3b5998;
+        border-radius: 4px;
+        color: #fff;
+        font-weight: 700;
+        font-size: 1.2em;
+        line-height: 60px;
+        &:focus {
+          outline: none;
+        }
+        i {
+          font-size: 1.8em;
+          margin-right: 30px;
+        }
+      }
+      .email-button {
+        height: 60px;
+        width: 340px;
+        background: $accent-color;
+        border: 1px solid $accent-color;
+        border-radius: 4px;
+        color: #fff;
+        font-weight: 700;
+        font-size: 1.2em;
+        line-height: 60px;
+        &:focus {
+          outline: none;
+        }
+        i {
+          font-size: 1.8em;
+          margin-right: 30px;
+        }
+      }
+    }
+    .modal-footer {
+      height: 150px;
+      background: #fff;
+      padding-top: 50px;
+      p {
+        color: $main-font-color;
+        padding: 0 50px;
+        text-align: center;
+      }
+    }
+  }
+}
+
+#modal-b {
+  .sign-in-logo {
+    text-align: center;
+    margin-left: 0;
+  }
+  .modal-body {
+    padding-top: 20px;
+  }
+  h2 {
+    margin-bottom: 30px;
+  }
+  input {
+    border: 1px solid #e6e6e6;
+    border-radius: 4px;
+    height: 40px;
+  }
+  p {
+    text-align: left;
+    margin-left: 130px;
+    margin-top: 15px;
+  }
+  .name {
+    width: 160px;
+  }
+  .first-name {
+    margin-right: 5px;
+  }
+  .last-name {
+    margin-left: 5px;
+  }
+  .email, .password {
+    width: 320px;
+  }
+  ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #e6e6e6;
+  }
+  :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+     color:    #e6e6e6;
+  }
+  ::-moz-placeholder { /* Mozilla Firefox 19+ */
+     color:    #e6e6e6;
+  }
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+     color:    #e6e6e6;
+  }
+  ::-ms-input-placeholder { /* Microsoft Edge */
+     color:    #e6e6e6;
   }
 }
