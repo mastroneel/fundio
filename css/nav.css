@@ -1,90 +1,121 @@
-/*
-Error: Undefined variable: "$logo-font".
-        on line 12 of /Users/laurenmastroni/Code/Sites/fundio/sass/nav.scss
+@media (max-width: 819px) {
+  #desktop-nav {
+    display: none; }
 
-7:     height: 60px;
-8:     background-color: #fff;
-9:     overflow: hidden;
-10:     padding-top: 10px;
-11:     .logo {
-12:       font-family: $logo-font;
-13:       font-size: 2em;
-14:       margin-left: 40px;
-15:       &:hover {
-16:         color: $accent-color;
-17:       }
+  #mobile-nav {
+    display: block;
+    height: 60px;
+    background-color: #fff;
+    padding-top: 10px; }
+    #mobile-nav .logo {
+      font-family: "Pacifico", cursive;
+      font-size: 2em;
+      margin-left: 40px; }
+      #mobile-nav .logo:hover {
+        color: #0ea77b; }
+    #mobile-nav i {
+      font-size: 1.3em;
+      color: #0ea77b;
+      margin-left: 20px;
+      margin-top: 20px; }
+    #mobile-nav form {
+      margin-left: 10px;
+      margin-top: 1px; }
+      #mobile-nav form input {
+        height: 30px;
+        border: none;
+        font-size: 1em;
+        font-family: "Open Sans", sans-serif; }
+        #mobile-nav form input:focus {
+          outline: none; }
+    #mobile-nav svg {
+      float: right;
+      margin-top: 5px;
+      margin-right: 50px; }
+    #mobile-nav ::-webkit-input-placeholder {
+      /* WebKit, Blink, Edge */
+      color: #0ea77b; }
+    #mobile-nav :-moz-placeholder {
+      /* Mozilla Firefox 4 to 18 */
+      color: #0ea77b;
+      opacity: 1; }
+    #mobile-nav ::-moz-placeholder {
+      /* Mozilla Firefox 19+ */
+      color: #0ea77b;
+      opacity: 1; }
+    #mobile-nav :-ms-input-placeholder {
+      /* Internet Explorer 10-11 */
+      color: #0ea77b; }
+    #mobile-nav ::-ms-input-placeholder {
+      /* Microsoft Edge */
+      color: #0ea77b; } }
+@media (min-width: 820px) {
+  #mobile-nav {
+    display: none; }
 
-Backtrace:
-/Users/laurenmastroni/Code/Sites/fundio/sass/nav.scss:12
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/script/tree/variable.rb:49:in `_perform'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/script/tree/node.rb:58:in `perform'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:397:in `visit_prop'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `map'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `map'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `map'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:515:in `visit_media'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `map'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:159:in `visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:8:in `visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/root_node.rb:36:in `css_tree'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/engine.rb:381:in `_render_with_sourcemap'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/engine.rb:298:in `render_with_sourcemap'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:391:in `run'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:63:in `process_result'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/exec/base.rb:52:in `parse'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/exec/base.rb:19:in `parse!'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/bin/sass:13:in `<top (required)>'
-/Applications/Koala.app/Contents/Resources/app.nw/bin/sass:18:in `load'
-/Applications/Koala.app/Contents/Resources/app.nw/bin/sass:18:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Undefined variable: \"$logo-font\".\A         on line 12 of /Users/laurenmastroni/Code/Sites/fundio/sass/nav.scss\A \A 7:     height: 60px;\A 8:     background-color: #fff;\A 9:     overflow: hidden;\A 10:     padding-top: 10px;\A 11:     .logo {\A 12:       font-family: $logo-font;\A 13:       font-size: 2em;\A 14:       margin-left: 40px;\A 15:       &:hover {\A 16:         color: $accent-color;\A 17:       }"; }
+  #desktop-nav {
+    display: block;
+    height: 60px;
+    background-color: #fff; }
+    #desktop-nav .desktop-nav-left {
+      line-height: 60px;
+      display: inline-flex; }
+      #desktop-nav .desktop-nav-left .logo {
+        font-family: "Pacifico", cursive;
+        font-size: 2em;
+        margin-left: 40px; }
+        #desktop-nav .desktop-nav-left .logo:hover {
+          color: #0ea77b; }
+      #desktop-nav .desktop-nav-left i {
+        font-size: 1.3em;
+        color: #0ea77b;
+        margin-left: 40px;
+        margin-top: 20px; }
+      #desktop-nav .desktop-nav-left form {
+        margin-left: 10px;
+        margin-top: 1px; }
+        #desktop-nav .desktop-nav-left form input {
+          height: 30px;
+          border: none;
+          font-size: 1em;
+          font-family: "Open Sans", sans-serif; }
+          #desktop-nav .desktop-nav-left form input:focus {
+            outline: none; }
+    #desktop-nav .desktop-nav-right {
+      float: right;
+      list-style-type: none;
+      display: inline-flex;
+      margin-top: 20px;
+      margin-right: 50px; }
+      #desktop-nav .desktop-nav-right a {
+        margin-right: 20px;
+        font-size: 1.1em; }
+    #desktop-nav ::-webkit-input-placeholder {
+      /* WebKit, Blink, Edge */
+      color: #0ea77b; }
+    #desktop-nav :-moz-placeholder {
+      /* Mozilla Firefox 4 to 18 */
+      color: #0ea77b;
+      opacity: 1; }
+    #desktop-nav ::-moz-placeholder {
+      /* Mozilla Firefox 19+ */
+      color: #0ea77b;
+      opacity: 1; }
+    #desktop-nav :-ms-input-placeholder {
+      /* Internet Explorer 10-11 */
+      color: #0ea77b; }
+    #desktop-nav ::-ms-input-placeholder {
+      /* Microsoft Edge */
+      color: #0ea77b; } }
+.dropdown button {
+  border: none;
+  background: transparent; }
+.dropdown ul {
+  margin-right: 100px; }
+  .dropdown ul li a {
+    color: #0ea77b; }
+
+.dropdown-menu {
+  z-index: 1000; }
+
+/*# sourceMappingURL=nav.css.map */
