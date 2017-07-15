@@ -177,5 +177,8 @@
       position: absolute;
       top: 30px;
       left: 10px; } }
+@media (max-width: 450px) {
+  .view-more-button {
+    margin-left: -45px; } }
 
 /*# sourceMappingURL=home.css.map */
