@@ -1,84 +1,181 @@
-/*
-Error: Undefined variable: "$main-font-color".
-        on line 12 of /Users/laurenmastroni/Code/Sites/fundio/sass/home.scss
+.recommended, .trending {
+  width: 97%;
+  margin: 40px auto;
+  background: #fff;
+  box-shadow: 1px 1px 1px #969696;
+  height: 60px;
+  padding-left: 40px;
+  border-radius: 4px; }
+  .recommended h6, .trending h6 {
+    font-size: 1.2em;
+    margin-top: 20px;
+    color: #3c3c3c;
+    font-weight: 700; }
+  .recommended .title-row, .trending .title-row {
+    margin-bottom: 40px; }
+  .recommended .card-row .card, .trending .card-row .card {
+    margin: 20px auto;
+    border-radius: 4px;
+    background: #fff;
+    box-shadow: 1px 1px 1px #969696;
+    max-width: 350px; }
+    .recommended .card-row .card .trending-button, .recommended .card-row .card .near-me-button, .trending .card-row .card .trending-button, .trending .card-row .card .near-me-button {
+      background: #0ea77b;
+      border: 1px solid #0ea77b;
+      border-radius: 4px;
+      color: #fff;
+      padding: 5px 10px;
+      position: absolute;
+      top: 30px;
+      left: 60px;
+      font-weight: 700; }
+      .recommended .card-row .card .trending-button i, .recommended .card-row .card .near-me-button i, .trending .card-row .card .trending-button i, .trending .card-row .card .near-me-button i {
+        margin-right: 5px; }
+    .recommended .card-row .card img, .trending .card-row .card img {
+      width: 100%;
+      height: 245px; }
+    .recommended .card-row .card h4, .trending .card-row .card h4 {
+      color: #3c3c3c;
+      font-weight: 700; }
+    .recommended .card-row .card a, .trending .card-row .card a {
+      font-weight: 700; }
+    .recommended .card-row .card .card-block, .trending .card-row .card .card-block {
+      padding: 15px; }
+    .recommended .card-row .card hr, .trending .card-row .card hr {
+      border-width: 6px;
+      width: 50%;
+      border-color: #0ea77b;
+      float: left;
+      margin-top: 0; }
+  .recommended .button-row, .trending .button-row {
+    text-align: center; }
+    .recommended .button-row button, .trending .button-row button {
+      height: 60px;
+      width: 300px;
+      background: #fff;
+      border: 1px solid #d8d8d8;
+      border-radius: 4px;
+      color: #0ea77b;
+      box-shadow: 1px 1px 1px #969696;
+      margin-top: 60px;
+      font-weight: 700;
+      font-size: 1.1em; }
+      .recommended .button-row button:focus, .trending .button-row button:focus {
+        outline: none; }
 
-7:   padding-left: 40px;
-8:   border-radius: 4px;
-9:   h6 {
-10:     font-size: 1.2em;
-11:     margin-top: 20px;
-12:     color: darken($main-font-color, 30%);
-13:     font-weight: 700;
-14:   }
-15:   .card-row {
-16:     margin-top: 40px;
-17:     .card {
+@media (min-width: 2451px) and (max-width: 2600px) {
+  .recommended .card-row .card .trending-button, .recommended .card-row .card .near-me-button, .trending .card-row .card .trending-button, .trending .card-row .card .near-me-button {
+    position: absolute;
+    top: 30px;
+    left: 240px; } }
+@media (min-width: 2319px) and (max-width: 2450px) {
+  .recommended .card-row .card .trending-button, .recommended .card-row .card .near-me-button, .trending .card-row .card .trending-button, .trending .card-row .card .near-me-button {
+    position: absolute;
+    top: 30px;
+    left: 220px; } }
+@media (min-width: 2192px) and (max-width: 2318px) {
+  .recommended .card-row .card .trending-button, .recommended .card-row .card .near-me-button, .trending .card-row .card .trending-button, .trending .card-row .card .near-me-button {
+    position: absolute;
+    top: 30px;
+    left: 200px; } }
+@media (min-width: 2061px) and (max-width: 2191px) {
+  .recommended .card-row .card .trending-button, .recommended .card-row .card .near-me-button, .trending .card-row .card .trending-button, .trending .card-row .card .near-me-button {
+    position: absolute;
+    top: 30px;
+    left: 180px; } }
+@media (min-width: 1950px) and (max-width: 2060px) {
+  .recommended .card-row .card .trending-button, .recommended .card-row .card .near-me-button, .trending .card-row .card .trending-button, .trending .card-row .card .near-me-button {
+    position: absolute;
+    top: 30px;
+    left: 160px; } }
+@media (min-width: 1808px) and (max-width: 1949px) {
+  .recommended .card-row .card .trending-button, .recommended .card-row .card .near-me-button, .trending .card-row .card .trending-button, .trending .card-row .card .near-me-button {
+    position: absolute;
+    top: 30px;
+    left: 140px; } }
+@media (min-width: 1691px) and (max-width: 1807px) {
+  .recommended .card-row .card .trending-button, .recommended .card-row .card .near-me-button, .trending .card-row .card .trending-button, .trending .card-row .card .near-me-button {
+    position: absolute;
+    top: 30px;
+    left: 120px; } }
+@media (min-width: 1566px) and (max-width: 1690px) {
+  .recommended .card-row .card .trending-button, .recommended .card-row .card .near-me-button, .trending .card-row .card .trending-button, .trending .card-row .card .near-me-button {
+    position: absolute;
+    top: 30px;
+    left: 100px; } }
+@media (min-width: 1456px) and (max-width: 1565px) {
+  .recommended .card-row .card .trending-button, .recommended .card-row .card .near-me-button, .trending .card-row .card .trending-button, .trending .card-row .card .near-me-button {
+    position: absolute;
+    top: 30px;
+    left: 80px; } }
+@media (min-width: 1200px) and (max-width: 1320px) {
+  .recommended .card-row .card .trending-button, .recommended .card-row .card .near-me-button, .trending .card-row .card .trending-button, .trending .card-row .card .near-me-button {
+    position: absolute;
+    top: 30px;
+    left: 40px; } }
+@media (min-width: 1110px) and (max-width: 1199px) {
+  .recommended .card-row .card .trending-button, .recommended .card-row .card .near-me-button, .trending .card-row .card .trending-button, .trending .card-row .card .near-me-button {
+    position: absolute;
+    top: 30px;
+    left: 120px; } }
+@media (min-width: 992px) and (max-width: 1109px) {
+  .recommended .card-row .card .trending-button, .recommended .card-row .card .near-me-button, .trending .card-row .card .trending-button, .trending .card-row .card .near-me-button {
+    position: absolute;
+    top: 30px;
+    left: 100px; } }
+@media (min-width: 768px) and (max-width: 850px) {
+  .recommended .card-row .card .trending-button, .recommended .card-row .card .near-me-button, .trending .card-row .card .trending-button, .trending .card-row .card .near-me-button {
+    position: absolute;
+    top: 30px;
+    left: 40px; } }
+@media (min-width: 723px) and (max-width: 767px) {
+  .recommended .card-row .card .trending-button, .recommended .card-row .card .near-me-button, .trending .card-row .card .trending-button, .trending .card-row .card .near-me-button {
+    position: absolute;
+    top: 30px;
+    left: 190px; } }
+@media (min-width: 670px) and (max-width: 722px) {
+  .recommended .card-row .card .trending-button, .recommended .card-row .card .near-me-button, .trending .card-row .card .trending-button, .trending .card-row .card .near-me-button {
+    position: absolute;
+    top: 30px;
+    left: 170px; } }
+@media (min-width: 622px) and (max-width: 669px) {
+  .recommended .card-row .card .trending-button, .recommended .card-row .card .near-me-button, .trending .card-row .card .trending-button, .trending .card-row .card .near-me-button {
+    position: absolute;
+    top: 30px;
+    left: 140px; } }
+@media (min-width: 575px) and (max-width: 621px) {
+  .recommended .card-row .card .trending-button, .recommended .card-row .card .near-me-button, .trending .card-row .card .trending-button, .trending .card-row .card .near-me-button {
+    position: absolute;
+    top: 30px;
+    left: 120px; } }
+@media (min-width: 525px) and (max-width: 574px) {
+  .recommended .card-row .card .trending-button, .recommended .card-row .card .near-me-button, .trending .card-row .card .trending-button, .trending .card-row .card .near-me-button {
+    position: absolute;
+    top: 30px;
+    left: 90px; } }
+@media (min-width: 481px) and (max-width: 524px) {
+  .recommended .card-row .card .trending-button, .recommended .card-row .card .near-me-button, .trending .card-row .card .trending-button, .trending .card-row .card .near-me-button {
+    position: absolute;
+    top: 30px;
+    left: 70px; } }
+@media (min-width: 440px) and (max-width: 480px) {
+  .recommended .card-row .card .trending-button, .recommended .card-row .card .near-me-button, .trending .card-row .card .trending-button, .trending .card-row .card .near-me-button {
+    position: absolute;
+    top: 30px;
+    left: 50px; } }
+@media (min-width: 375px) and (max-width: 439px) {
+  .recommended .card-row .card, .trending .card-row .card {
+    margin-left: -30px; }
+    .recommended .card-row .card .trending-button, .recommended .card-row .card .near-me-button, .trending .card-row .card .trending-button, .trending .card-row .card .near-me-button {
+      position: absolute;
+      top: 30px;
+      left: 30px; } }
+@media (min-width: 300px) and (max-width: 374px) {
+  .recommended .card-row .card, .trending .card-row .card {
+    margin-left: -35px; }
+    .recommended .card-row .card .trending-button, .recommended .card-row .card .near-me-button, .trending .card-row .card .trending-button, .trending .card-row .card .near-me-button {
+      position: absolute;
+      top: 30px;
+      left: 10px; } }
 
-Backtrace:
-/Users/laurenmastroni/Code/Sites/fundio/sass/home.scss:12
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/script/tree/variable.rb:49:in `_perform'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/script/tree/node.rb:58:in `perform'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/script/tree/funcall.rb:173:in `perform_arg'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/script/tree/funcall.rb:124:in `block in _perform'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/script/tree/funcall.rb:124:in `each'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/script/tree/funcall.rb:124:in `each_with_index'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/script/tree/funcall.rb:124:in `each'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/script/tree/funcall.rb:124:in `map'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/script/tree/funcall.rb:124:in `_perform'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/script/tree/node.rb:58:in `perform'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:397:in `visit_prop'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `map'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `map'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `map'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:159:in `visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:8:in `visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/root_node.rb:36:in `css_tree'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/engine.rb:381:in `_render_with_sourcemap'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/engine.rb:298:in `render_with_sourcemap'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:391:in `run'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:63:in `process_result'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/exec/base.rb:52:in `parse'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/exec/base.rb:19:in `parse!'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/bin/sass:13:in `<top (required)>'
-/Applications/Koala.app/Contents/Resources/app.nw/bin/sass:18:in `load'
-/Applications/Koala.app/Contents/Resources/app.nw/bin/sass:18:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Undefined variable: \"$main-font-color\".\A         on line 12 of /Users/laurenmastroni/Code/Sites/fundio/sass/home.scss\A \A 7:   padding-left: 40px;\A 8:   border-radius: 4px;\A 9:   h6 {\A 10:     font-size: 1.2em;\A 11:     margin-top: 20px;\A 12:     color: darken($main-font-color, 30%);\A 13:     font-weight: 700;\A 14:   }\A 15:   .card-row {\A 16:     margin-top: 40px;\A 17:     .card {"; }
+/*# sourceMappingURL=home.css.map */

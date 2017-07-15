@@ -1,10 +1,13 @@
-#desktop-nav {
-  height: 60px;
-  // box-shadow: 1px 1px 1px #969696;
-  background-color: #fff;
-  .desktop-nav-left {
-    line-height: 60px;
-    display: inline-flex;
+@media (max-width: 819px) {
+  #desktop-nav {
+    display: none;
+  }
+  #mobile-nav {
+    display: block;
+    height: 60px;
+    background-color: #fff;
+    overflow: hidden;
+    padding-top: 10px;
     .logo {
       font-family: $logo-font;
       font-size: 2em;
@@ -16,7 +19,7 @@
     i {
       font-size: 1.3em;
       color: $accent-color;
-      margin-left: 40px;
+      margin-left: 20px;
       margin-top: 20px;
     }
     form {
@@ -32,33 +35,100 @@
         }
       }
     }
-  }
-  .desktop-nav-right {
-    float: right;
-    list-style-type: none;
-    display: inline-flex;
-    margin-top: 20px;
-    margin-right: 50px;
-    a {
+    svg {
+      float: right;
+      margin-top: 5px;
       margin-right: 20px;
-      font-size: 1.1em;
+    }
+    ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+      color:    $accent-color;
+    }
+    :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+       color:    $accent-color;
+       opacity:  1;
+    }
+    ::-moz-placeholder { /* Mozilla Firefox 19+ */
+       color:    $accent-color;
+       opacity:  1;
+    }
+    :-ms-input-placeholder { /* Internet Explorer 10-11 */
+       color:    $accent-color;
+    }
+    ::-ms-input-placeholder { /* Microsoft Edge */
+       color:    $accent-color;
     }
   }
-  ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
-    color:    $accent-color;
+}
+
+
+// Desktop nav
+@media (min-width: 820px) {
+  #mobile-nav {
+    display: none;
   }
-  :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-     color:    $accent-color;
-     opacity:  1;
-  }
-  ::-moz-placeholder { /* Mozilla Firefox 19+ */
-     color:    $accent-color;
-     opacity:  1;
-  }
-  :-ms-input-placeholder { /* Internet Explorer 10-11 */
-     color:    $accent-color;
-  }
-  ::-ms-input-placeholder { /* Microsoft Edge */
-     color:    $accent-color;
+  #desktop-nav {
+    display: block;
+    height: 60px;
+    // box-shadow: 1px 1px 1px #969696;
+    background-color: #fff;
+    .desktop-nav-left {
+      line-height: 60px;
+      display: inline-flex;
+      .logo {
+        font-family: $logo-font;
+        font-size: 2em;
+        margin-left: 40px;
+        &:hover {
+          color: $accent-color;
+        }
+      }
+      i {
+        font-size: 1.3em;
+        color: $accent-color;
+        margin-left: 40px;
+        margin-top: 20px;
+      }
+      form {
+        margin-left: 10px;
+        margin-top: 1px;
+        input {
+          height: 30px;
+          border: none;
+          font-size: 1em;
+          font-family: $main-font;
+          &:focus {
+            outline: none;
+          }
+        }
+      }
+    }
+    .desktop-nav-right {
+      float: right;
+      list-style-type: none;
+      display: inline-flex;
+      margin-top: 20px;
+      margin-right: 50px;
+      a {
+        margin-right: 20px;
+        font-size: 1.1em;
+      }
+    }
+    ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+      color:    $accent-color;
+    }
+    :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+       color:    $accent-color;
+       opacity:  1;
+    }
+    ::-moz-placeholder { /* Mozilla Firefox 19+ */
+       color:    $accent-color;
+       opacity:  1;
+    }
+    :-ms-input-placeholder { /* Internet Explorer 10-11 */
+       color:    $accent-color;
+    }
+    ::-ms-input-placeholder { /* Microsoft Edge */
+       color:    $accent-color;
+    }
   }
 }
