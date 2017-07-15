@@ -31,7 +31,7 @@
     #mobile-nav svg {
       float: right;
       margin-top: 5px;
-      margin-right: 50px; }
+      margin-left: 70px; }
     #mobile-nav ::-webkit-input-placeholder {
       /* WebKit, Blink, Edge */
       color: #0ea77b; }
@@ -117,5 +117,9 @@
 
 .dropdown-menu {
   z-index: 1000; }
+
+@media (max-width: 420px) {
+  #mobile-nav svg {
+    margin-left: 40px; } }
 
 /*# sourceMappingURL=nav.css.map */
