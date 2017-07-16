@@ -1,0 +1,34 @@
+.start-campaign-nav {
+  .start-campaign-nav-right {
+    .user-container-add-video {
+      margin-top: -60px;
+    }
+  }
+}
+
+.add-photo-or-video-container{
+  .choose-photo-or-video-container {
+    text-align: center;
+    height: 140px;
+    padding-top: 15px;
+    background: #fff;
+    margin: 1.6%;
+    width: 30%;
+    border: 1px solid lighten($accent-color, 40%);
+    border-radius: 4px;
+    img {
+      height: 70px;
+    }
+  }
+  .require-row {
+    text-align: center;
+    margin: 20px 0;
+  }
+  .go-back-row {
+    padding: 30px 0 30px 15px;
+    a {
+      font-size: 1.1em;
+      font-weight: 700;
+    }
+  }
+}

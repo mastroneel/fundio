@@ -9683,5 +9683,27 @@ h1, h1, h3, h4, h5, h6, p {
 @media (max-width: 920px) {
   .start-campaign-nav-right {
     visibility: hidden; } }
+.start-campaign-nav .start-campaign-nav-right .user-container-add-video {
+  margin-top: -60px; }
+
+.add-photo-or-video-container .choose-photo-or-video-container {
+  text-align: center;
+  height: 140px;
+  padding-top: 15px;
+  background: #fff;
+  margin: 1.6%;
+  width: 30%;
+  border: 1px solid #8cf5d7;
+  border-radius: 4px; }
+  .add-photo-or-video-container .choose-photo-or-video-container img {
+    height: 70px; }
+.add-photo-or-video-container .require-row {
+  text-align: center;
+  margin: 20px 0; }
+.add-photo-or-video-container .go-back-row {
+  padding: 30px 0 30px 15px; }
+  .add-photo-or-video-container .go-back-row a {
+    font-size: 1.1em;
+    font-weight: 700; }
 
 /*# sourceMappingURL=app.css.map */
