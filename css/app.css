@@ -9368,10 +9368,13 @@ h1, h1, h3, h4, h5, h6, p {
   .campaign-container .row {
     padding: 10px; } }
 .about-container {
-  text-align: center; }
+  text-align: center;
+  margin: 0 auto;
+  width: 50%; }
+  .about-container .row {
+    margin: 0 auto; }
   .about-container h1 {
     margin: 0 auto;
-    width: 700px;
     height: 60px;
     background: #fff;
     border: 1px solid #fff;
@@ -9387,21 +9390,16 @@ h1, h1, h3, h4, h5, h6, p {
     margin: 20px 0 50px 0; }
   .about-container .overview {
     margin-top: -30px; }
-  .about-container .overview-row {
-    padding: 0 350px; }
-  .about-container .list-row {
-    padding: 0 300px; }
-    .about-container .list-row ul {
-      list-style: none;
-      font-color: #262626;
-      text-align: left;
-      margin-bottom: 50px; }
-      .about-container .list-row ul li {
-        margin-top: 20px;
-        font-size: 1.1em; }
+  .about-container .list-row ul {
+    list-style: none;
+    font-color: #262626;
+    text-align: left;
+    margin-bottom: 50px; }
+    .about-container .list-row ul li {
+      margin-top: 20px;
+      font-size: 1.1em; }
   .about-container .press-release-row {
-    text-align: center;
-    padding: 0 350px; }
+    text-align: center; }
     .about-container .press-release-row .view-more-button {
       width: 250px;
       height: 50px;
@@ -9421,7 +9419,6 @@ h1, h1, h3, h4, h5, h6, p {
       font-weight: 700;
       margin-bottom: 50px; }
   .about-container .recent-press-row {
-    padding: 0 350px;
     text-align: left; }
     .about-container .recent-press-row .button-container {
       text-align: center; }
@@ -9444,7 +9441,7 @@ h1, h1, h3, h4, h5, h6, p {
   .about-container .press-contact-row {
     text-align: left;
     background: #d2fbef;
-    margin: 40px 350px;
+    margin: 40px 0;
     border: 1px solid #a3f7df;
     border-radius: 4px;
     padding: 20px 0; }
@@ -9479,5 +9476,22 @@ h1, h1, h3, h4, h5, h6, p {
       list-style: none; }
       .about-container .press-contact-row ul li {
         margin: 15px 0; }
+
+@media (min-width: 689px) and (max-width: 988px) {
+  .about-container {
+    width: 70%; } }
+@media (min-width: 400px) and (max-width: 688px) {
+  .about-container {
+    width: 90%; } }
+@media (min-width: 200px) and (max-width: 399px) {
+  .about-container {
+    width: 95%; }
+
+  .about-header h1 {
+    font-size: 3em; } }
+@media (max-width: 506px) {
+  .about-container .press-contact-row .press-contact-button {
+    float: left;
+    margin-top: 10px; } }
 
 /*# sourceMappingURL=app.css.map */
