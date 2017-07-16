@@ -8,7 +8,6 @@
     display: block;
     height: 60px;
     background-color: #fff;
-    // overflow: hidden;
     padding-top: 10px;
     .logo {
       font-family: $logo-font;
@@ -139,5 +138,19 @@
 @media (max-width: 420px) {
   .mobile-nav-right {
     padding-right: 50px;
+  }
+  .dropdown {
+    button {
+      border: none;
+      background: transparent;
+    }
+    ul {
+      margin-right: -60px;
+      li {
+        a {
+          color: $accent-color;
+        }
+      }
+    }
   }
 }

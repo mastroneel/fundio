@@ -8264,7 +8264,15 @@ h1, h1, h3, h4, h5, h6, p {
 
 @media (max-width: 420px) {
   .mobile-nav-right {
-    padding-right: 50px; } }
+    padding-right: 50px; }
+
+  .dropdown button {
+    border: none;
+    background: transparent; }
+  .dropdown ul {
+    margin-right: -60px; }
+    .dropdown ul li a {
+      color: #0ea77b; } }
 .carousel-container {
   width: 100%;
   height: 80vh;
