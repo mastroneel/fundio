@@ -1,4 +1,7 @@
 #blog-desktop-nav {
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
   height: 60px;
   background-color: #fff; }
   #blog-desktop-nav .desktop-nav-left {

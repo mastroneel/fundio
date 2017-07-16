@@ -8201,6 +8201,9 @@ h1, h1, h3, h4, h5, h6, p {
 
   #desktop-nav {
     display: block;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
     height: 60px;
     background-color: #fff; }
     #desktop-nav .desktop-nav-left {
@@ -8952,6 +8955,9 @@ h1, h1, h3, h4, h5, h6, p {
   #modal-b .email, #modal-b .password {
     width: 250px; } }
 #blog-desktop-nav {
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
   height: 60px;
   background-color: #fff; }
   #blog-desktop-nav .desktop-nav-left {
@@ -9186,28 +9192,32 @@ h1, h1, h3, h4, h5, h6, p {
       width: 280px; }
       .blog-body .card img {
         height: 200px; } }
-.campaign-nav .campaign-nav-right button {
-  width: 90px;
-  border-radius: 4px;
-  color: #fff; }
-.campaign-nav .facebook-button {
-  background: #3b5998;
-  border: 1px solid #3b5998;
-  color: #fff;
-  width: 90px;
-  border-radius: 4px; }
-.campaign-nav .twitter-button {
-  background: #1da1f2;
-  border: 1px solid #1da1f2;
-  color: #fff;
-  width: 90px;
-  border-radius: 4px; }
-.campaign-nav .donate-button {
-  background: #0ea77b;
-  border: 1px solid #0ea77b;
-  color: #fff;
-  width: 90px;
-  border-radius: 4px; }
+.campaign-nav {
+  position: fixed;
+  z-index: 1000;
+  width: 100%; }
+  .campaign-nav .campaign-nav-right button {
+    width: 90px;
+    border-radius: 4px;
+    color: #fff; }
+  .campaign-nav .facebook-button {
+    background: #3b5998;
+    border: 1px solid #3b5998;
+    color: #fff;
+    width: 90px;
+    border-radius: 4px; }
+  .campaign-nav .twitter-button {
+    background: #1da1f2;
+    border: 1px solid #1da1f2;
+    color: #fff;
+    width: 90px;
+    border-radius: 4px; }
+  .campaign-nav .donate-button {
+    background: #0ea77b;
+    border: 1px solid #0ea77b;
+    color: #fff;
+    width: 90px;
+    border-radius: 4px; }
 
 .campaign-container .facebook-button {
   background: #3b5998;
@@ -9282,6 +9292,14 @@ h1, h1, h3, h4, h5, h6, p {
   margin-left: 70px;
   margin-top: 40px;
   margin-bottom: 40px; }
+.campaign-container .created-by i {
+  margin-left: 15px;
+  margin-right: 15px;
+  color: #0ea77b;
+  font-size: 1.5em; }
+.campaign-container .created-by h4 {
+  font-size: 1em;
+  margin-left: 100px; }
 .campaign-container .campaign-column-2 {
   padding: 40px 20px; }
   .campaign-container .campaign-column-2 h1 {
@@ -9299,7 +9317,11 @@ h1, h1, h3, h4, h5, h6, p {
     margin-left: 50%;
     border-top: 8px solid #dedede; }
   .campaign-container .campaign-column-2 .donate {
-    width: 100%; }
+    width: 100%;
+    margin-top: 10px; }
+    .campaign-container .campaign-column-2 .donate i {
+      font-size: 1.5em;
+      margin-right: 30px; }
   .campaign-container .campaign-column-2 img {
     height: 50px;
     width: 50px;
