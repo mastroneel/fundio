@@ -199,8 +199,16 @@
   }
 }
 
-// Mobile nav
 @media (max-width: 905px) {
+   #blog-desktop-nav {
+     .desktop-nav-right {
+       display: none;
+     }
+   }
+}
+
+// Mobile nav
+@media (max-width: 768px) {
   #blog-desktop-nav {
     display: none;
   }

@@ -143,6 +143,9 @@
     #blog-desktop-nav .desktop-nav-right .sign-in-button:focus {
       outline: none; } }
 @media (max-width: 905px) {
+  #blog-desktop-nav .desktop-nav-right {
+    display: none; } }
+@media (max-width: 768px) {
   #blog-desktop-nav {
     display: none; }
 

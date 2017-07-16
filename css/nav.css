@@ -1,4 +1,4 @@
-@media (max-width: 819px) {
+@media (max-width: 768px) {
   #desktop-nav {
     display: none; }
 
@@ -32,7 +32,7 @@
       float: right;
       margin-top: 5px;
       margin-left: 70px; } }
-@media (min-width: 820px) {
+@media (min-width: 769px) {
   #mobile-nav {
     display: none; }
 
