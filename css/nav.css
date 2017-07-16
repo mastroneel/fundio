@@ -100,7 +100,7 @@
   z-index: 1000; }
 
 @media (max-width: 420px) {
-  #mobile-nav svg {
-    margin-left: 40px; } }
+  #mobile-nav {
+    padding-right: 50px; } }
 
 /*# sourceMappingURL=nav.css.map */
