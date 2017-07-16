@@ -9139,7 +9139,7 @@ h1, h1, h3, h4, h5, h6, p {
     padding-right: 50px; }
 
   .blog-container {
-    margin-left: 0px; }
+    margin-left: -10px; }
 
   .blog-body {
     padding-top: 50px; }
@@ -9154,8 +9154,8 @@ h1, h1, h3, h4, h5, h6, p {
         margin-right: 5px; }
     .blog-body .card {
       margin: 50px auto;
-      width: 300px; }
+      width: 280px; }
       .blog-body .card img {
-        height: 225px; } }
+        height: 200px; } }
 
 /*# sourceMappingURL=app.css.map */
