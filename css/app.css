@@ -9499,6 +9499,9 @@ h1, h1, h3, h4, h5, h6, p {
   .about-container .press-contact-row .press-contact-button {
     float: left;
     margin-top: 10px; } }
+@media (max-width: 400px) {
+  .about-container .press-contact-row .start-fundraiser-button {
+    width: 70%; } }
 .how-it-works-container h1 {
   margin: 40px auto;
   height: 60px;
@@ -9549,5 +9552,9 @@ h1, h1, h3, h4, h5, h6, p {
   .how-it-works-container .step-two-row img {
     width: 30%;
     float: left; }
+
+@media (max-width: 400px) {
+  .about-container .start-fundraiser-button {
+    width: 70%; } }
 
 /*# sourceMappingURL=app.css.map */

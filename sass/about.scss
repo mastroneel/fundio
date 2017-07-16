@@ -187,3 +187,13 @@
     }
   }
 }
+
+@media (max-width: 400px) {
+  .about-container {
+    .press-contact-row {
+      .start-fundraiser-button {
+        width: 70%;
+      }
+    }
+  }
+}
