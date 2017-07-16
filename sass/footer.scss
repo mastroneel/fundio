@@ -40,6 +40,40 @@
   }
 }
 
+.sub-footer {
+  height: 150px;
+  width: 100%;
+  padding-top: 40px;
+  background: $background-color;
+  ul {
+    list-style: none;
+    display: inline-flex;
+    li {
+      margin: 12px;
+    }
+  }
+  .sub-footer-right {
+    text-align: right;
+    ul {
+      li {
+        margin: 15px 20px;
+        i {
+          font-size: 2em;
+        }
+        .fa-facebook {
+          color: #3b5998;
+        }
+        .fa-twitter {
+          color: #1da1f2;
+        }
+        .fa-instagram {
+          color: #262626;
+        }
+      }
+    }
+  }
+}
+
 .trending-footer, .nearme-footer {
   margin-top: 1150px;
 }
@@ -51,6 +85,9 @@
 // Media query to display mobile footer
 @media (max-width: 767px) {
   .desktop-footer {
+    display: none;
+  }
+  .sub-footer {
     display: none;
   }
   .mobile-footer {
