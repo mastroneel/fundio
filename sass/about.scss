@@ -148,11 +148,21 @@
   .about-container {
     width: 70%;
   }
+  .about-header {
+    h1 {
+      font-size: 3em;
+    }
+  }
 }
 
 @media (min-width: 400px) and (max-width: 688px) {
   .about-container {
     width: 90%;
+  }
+  .about-header {
+    h1 {
+      font-size: 3em;
+    }
   }
 }
 
