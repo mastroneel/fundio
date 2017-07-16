@@ -100,7 +100,7 @@
   z-index: 1000; }
 
 @media (max-width: 420px) {
-  #mobile-nav {
+  .mobile-nav-right {
     padding-right: 50px; } }
 
 /*# sourceMappingURL=nav.css.map */

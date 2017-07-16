@@ -8263,7 +8263,7 @@ h1, h1, h3, h4, h5, h6, p {
   z-index: 1000; }
 
 @media (max-width: 420px) {
-  #mobile-nav {
+  .mobile-nav-right {
     padding-right: 50px; } }
 .carousel-container {
   width: 100%;
