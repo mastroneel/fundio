@@ -8194,24 +8194,7 @@ h1, h1, h3, h4, h5, h6, p {
     #mobile-nav svg {
       float: right;
       margin-top: 5px;
-      margin-left: 70px; }
-    #mobile-nav ::-webkit-input-placeholder {
-      /* WebKit, Blink, Edge */
-      color: #0ea77b; }
-    #mobile-nav :-moz-placeholder {
-      /* Mozilla Firefox 4 to 18 */
-      color: #0ea77b;
-      opacity: 1; }
-    #mobile-nav ::-moz-placeholder {
-      /* Mozilla Firefox 19+ */
-      color: #0ea77b;
-      opacity: 1; }
-    #mobile-nav :-ms-input-placeholder {
-      /* Internet Explorer 10-11 */
-      color: #0ea77b; }
-    #mobile-nav ::-ms-input-placeholder {
-      /* Microsoft Edge */
-      color: #0ea77b; } }
+      margin-left: 70px; } }
 @media (min-width: 820px) {
   #mobile-nav {
     display: none; }
@@ -8273,10 +8256,8 @@ h1, h1, h3, h4, h5, h6, p {
 .dropdown button {
   border: none;
   background: transparent; }
-.dropdown ul {
-  margin-right: 100px; }
-  .dropdown ul li a {
-    color: #0ea77b; }
+.dropdown ul li a {
+  color: #0ea77b; }
 
 .dropdown-menu {
   z-index: 1000; }
@@ -8287,6 +8268,7 @@ h1, h1, h3, h4, h5, h6, p {
 .carousel-container {
   width: 100%;
   height: 80vh;
+  min-height: 460px;
   overflow: hidden; }
 
 #myCarousel {
@@ -8350,20 +8332,6 @@ h1, h1, h3, h4, h5, h6, p {
       margin-left: 30px;
       margin-bottom: 250px; }
 
-.sub-hero {
-  overflow-x: scroll;
-  width: 96%;
-  margin: 0 auto;
-  text-align: center;
-  font-family: "Open Sans", sans-serif;
-  box-shadow: 1px 1px 1px #969696;
-  border-radius: 4px;
-  color: #888;
-  padding-top: 15px;
-  background-color: #fff; }
-  .sub-hero i {
-    font-size: 2em; }
-
 .mobile-hero {
   display: none; }
 
@@ -8374,7 +8342,8 @@ h1, h1, h3, h4, h5, h6, p {
     margin: 0 auto;
     background-image: url("../img/fundio-1.jpg");
     background-size: cover;
-    height: 80vh; }
+    height: 80vh;
+    min-height: 420px; }
     .mobile-hero h2 {
       float: left;
       text-align: left;
@@ -8417,7 +8386,8 @@ h1, h1, h3, h4, h5, h6, p {
     margin: 0 auto;
     background-image: url("../img/fundio-1.jpg");
     background-size: cover;
-    height: 80vh; }
+    height: 80vh;
+    min-height: 360px; }
     .mobile-hero h2 {
       float: left;
       text-align: left;
@@ -8453,6 +8423,20 @@ h1, h1, h3, h4, h5, h6, p {
 
   .carousel-container {
     display: none; } }
+.sub-hero {
+  overflow-x: scroll;
+  width: 96%;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  box-shadow: 1px 1px 1px #969696;
+  border-radius: 4px;
+  color: #888;
+  padding-top: 15px;
+  background-color: #fff; }
+  .sub-hero i {
+    font-size: 2em; }
+
 @media (min-width: 2490px) and (max-width: 3000px) {
   #myCarousel .container .carousel-caption {
     width: 20%;
@@ -8732,70 +8716,73 @@ h1, h1, h3, h4, h5, h6, p {
 @media (max-width: 450px) {
   .view-more-button {
     margin-left: -45px; } }
-footer {
+.desktop-footer {
   min-height: 250px;
   margin-top: 100px;
   background: #fff;
   padding-top: 50px;
   padding-left: 80px; }
-  footer .logo {
+  .desktop-footer .logo {
     font-family: "Pacifico", cursive;
     font-size: 3em;
     margin-left: 40px; }
-    footer .logo:hover {
+    .desktop-footer .logo:hover {
       color: #0ea77b; }
-  footer select {
+  .desktop-footer select {
     height: 40px;
     width: 140px;
     margin-left: 30px;
     margin-top: 30px;
     background: #fff;
     border: 1px solid #d8d8d8; }
-    footer select:focus {
+    .desktop-footer select:focus {
       outline: none; }
-  footer h6 {
+  .desktop-footer h6 {
     color: #3c3c3c;
     font-weight: 700;
     font-size: 1.1em;
     margin-bottom: 20px; }
-  footer ul {
+  .desktop-footer ul {
     list-style-type: none;
     margin-left: -40px; }
-    footer ul li {
+    .desktop-footer ul li {
       margin-top: 10px; }
 
 .trending-footer, .nearme-footer {
   margin-top: 1150px; }
 
+.mobile-footer {
+  display: none; }
+
+@media (max-width: 767px) {
+  .desktop-footer {
+    display: none; }
+
+  .mobile-footer {
+    display: block;
+    background: #fff;
+    text-align: center;
+    padding: 20px 0; }
+    .mobile-footer ul {
+      list-style: none;
+      display: inline-flex;
+      margin-left: -40px; }
+      .mobile-footer ul li {
+        margin: 15px 20px; }
+        .mobile-footer ul li i {
+          font-size: 2em; }
+        .mobile-footer ul li .fa-facebook {
+          color: #3b5998; }
+        .mobile-footer ul li .fa-twitter {
+          color: #1da1f2; }
+        .mobile-footer ul li .fa-instagram {
+          color: #262626; } }
 @media (max-width: 1199px) {
   .trending-footer, .nearme-footer {
     margin-top: 1650px; } }
 @media (max-width: 767px) {
   .trending-footer, .nearme-footer {
     margin-top: 3000px; } }
-@media (max-width: 767px) {
-  footer {
-    padding-left: 0; }
-    footer .logo-column {
-      text-align: center; }
-      footer .logo-column .logo {
-        margin-left: 0; }
-      footer .logo-column select {
-        margin-left: 0; }
-    footer .help-column {
-      margin-top: 50px; } }
-@media (max-width: 400px) {
-  footer {
-    padding-left: 0; }
-    footer .logo-column {
-      text-align: center; }
-      footer .logo-column .logo {
-        margin-left: 0; }
-      footer .logo-column select {
-        margin-left: 0; }
-    footer .help-column {
-      margin-top: 50px;
-      font-size: 0.8em; } }
 @media (max-width: 767px) {
   .view-more-button {
     margin-bottom: 150px; } }
@@ -8808,7 +8795,7 @@ footer {
   .modal .modal-content .modal-header .sign-in-logo {
     font-family: "Pacifico", cursive;
     font-size: 3em;
-    margin-left: 40px;
+    margin-left: 0px;
     color: #0ea77b; }
   .modal .modal-content .modal-body {
     background-color: #f3fefb;
@@ -8892,6 +8879,44 @@ footer {
   /* Microsoft Edge */
   color: #e6e6e6; }
 
+@media (min-width: 300px) and (max-width: 401px) {
+  .modal .modal-content .modal-header .sign-in-logo {
+    margin-left: 0px; }
+  .modal .modal-content .modal-footer {
+    height: 100px;
+    background: #fff;
+    padding-top: 20px; }
+    .modal .modal-content .modal-footer p {
+      font-size: 0.8em; }
+  .modal .modal-content .modal-body {
+    padding-top: 20px;
+    padding-bottom: 40px; }
+    .modal .modal-content .modal-body .facebook-button {
+      height: 50px;
+      width: 250px;
+      line-height: 50px; }
+      .modal .modal-content .modal-body .facebook-button i {
+        font-size: 1.2em;
+        margin-right: 10px; }
+    .modal .modal-content .modal-body .email-button {
+      height: 50px;
+      width: 250px;
+      line-height: 50px;
+      margin-top: -60px; }
+      .modal .modal-content .modal-body .email-button i {
+        font-size: 1.2em;
+        margin-right: 10px; } }
+@media (min-width: 300px) and (max-width: 401px) {
+  #modal-b .modal-body {
+    padding-top: 0px; }
+  #modal-b h2 {
+    margin-bottom: 15px; }
+  #modal-b p {
+    margin-left: 30px; }
+  #modal-b .name {
+    width: 115px; }
+  #modal-b .email, #modal-b .password {
+    width: 250px; } }
 #blog-desktop-nav {
   height: 60px;
   background-color: #fff; }
@@ -8925,6 +8950,9 @@ footer {
     margin-left: 20px; }
     #blog-desktop-nav .sign-in-button:focus {
       outline: none; }
+
+.blog-container {
+  margin-bottom: 70px; }
 
 .blog-header {
   height: 200px;
@@ -9007,6 +9035,12 @@ footer {
     font-weight: 700; }
   .blog-body .card a {
     font-weight: 700; }
+  .blog-body .card hr {
+    border-width: 6px;
+    width: 50%;
+    border-color: #0ea77b;
+    float: left;
+    margin-top: 0; }
   .blog-body .card .card-block {
     padding: 15px; }
   .blog-body .card .progress-bar {
@@ -9017,5 +9051,100 @@ footer {
     position: absolute;
     top: 364px;
     left: 15px; }
+
+@media (min-width: 768px) and (max-width: 1058px) {
+  #blog-desktop-nav .desktop-nav-right a {
+    margin-right: 10px;
+    font-size: 0.9em; }
+  #blog-desktop-nav .desktop-nav-right .sign-in-button {
+    margin-top: -20px;
+    font-size: 0.9em; }
+    #blog-desktop-nav .desktop-nav-right .sign-in-button:focus {
+      outline: none; } }
+@media (max-width: 905px) {
+  #blog-desktop-nav {
+    display: none; }
+
+  #mobile-nav {
+    display: block;
+    height: 60px;
+    background-color: #fff;
+    padding-top: 10px; }
+    #mobile-nav .logo {
+      font-family: "Pacifico", cursive;
+      font-size: 2em;
+      margin-left: 40px; }
+      #mobile-nav .logo:hover {
+        color: #0ea77b; }
+    #mobile-nav i {
+      font-size: 1.3em;
+      color: #0ea77b;
+      margin-left: 20px;
+      margin-top: 20px; }
+    #mobile-nav form {
+      margin-left: 10px;
+      margin-top: 1px; }
+      #mobile-nav form input {
+        height: 30px;
+        border: none;
+        font-size: 1em;
+        font-family: "Open Sans", sans-serif; }
+        #mobile-nav form input:focus {
+          outline: none; }
+    #mobile-nav svg {
+      float: right;
+      margin-top: 5px;
+      margin-left: 70px; } }
+@media (max-width: 946px) {
+  .blog-categories {
+    display: none; }
+
+  .blog-container {
+    margin-left: 100px; }
+
+  .blog-date-row {
+    display: none; } }
+@media (max-width: 835px) {
+  .blog-container {
+    margin-left: 60px; } }
+@media (max-width: 646px) {
+  .blog-container {
+    margin-left: 20px; } }
+@media (max-width: 575px) {
+  .blog-container {
+    margin-left: 0px; } }
+@media (max-width: 551px) {
+  .blog-container {
+    margin-left: 0px; }
+
+  .blog-body {
+    padding-top: 50px; }
+    .blog-body .breadcrumb {
+      display: none; }
+    .blog-body .card {
+      margin: 50px auto;
+      width: 350px; }
+      .blog-body .card img {
+        height: 245px; } }
+@media (max-width: 399px) {
+  .blog-container {
+    margin-left: 0px; }
+
+  .blog-body {
+    padding-top: 50px; }
+    .blog-body .breadcrumb {
+      display: none; }
+    .blog-body button {
+      height: 35px;
+      font-size: 1em;
+      padding: 0 10px;
+      margin: 10px 3px; }
+      .blog-body button i {
+        margin-right: 5px; }
+    .blog-body .card {
+      margin: 50px auto;
+      width: 300px; }
+      .blog-body .card img {
+        height: 225px; } }
 
 /*# sourceMappingURL=app.css.map */

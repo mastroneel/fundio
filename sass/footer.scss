@@ -1,6 +1,6 @@
 @import 'variables';
 
-footer {
+.desktop-footer {
   min-height: 250px;
   margin-top: 100px;
   background: #fff;
@@ -44,6 +44,44 @@ footer {
   margin-top: 1150px;
 }
 
+.mobile-footer {
+  display: none;
+}
+
+// Media query to display mobile footer
+@media (max-width: 767px) {
+  .desktop-footer {
+    display: none;
+  }
+  .mobile-footer {
+    display: block;
+    background: #fff;
+    text-align: center;
+    padding: 20px 0;
+    ul {
+      list-style: none;
+      display: inline-flex;
+      margin-left: -40px;
+      li {
+        margin: 15px 20px;
+        i {
+          font-size: 2em;
+        }
+        .fa-facebook {
+          color: #3b5998;
+        }
+        .fa-twitter {
+          color: #1da1f2;
+        }
+        .fa-instagram {
+          color: #262626;
+        }
+      }
+    }
+  }
+}
+
+
 // Media queries
 
 @media (max-width: 1199px) {
@@ -58,42 +96,6 @@ footer {
   }
 }
 
-@media (max-width: 767px) {
-  footer {
-    padding-left: 0;
-    .logo-column {
-      text-align: center;
-      .logo {
-        margin-left: 0;
-      }
-      select {
-        margin-left: 0;
-      }
-    }
-    .help-column {
-      margin-top: 50px;
-    }
-  }
-}
-
-@media (max-width: 400px) {
-  footer {
-    padding-left: 0;
-    .logo-column {
-      text-align: center;
-      .logo {
-        margin-left: 0;
-      }
-      select {
-        margin-left: 0;
-      }
-    }
-    .help-column {
-      margin-top: 50px;
-      font-size: 0.8em;
-    }
-  }
-}
 
 @media (max-width: 767px) {
   .view-more-button {

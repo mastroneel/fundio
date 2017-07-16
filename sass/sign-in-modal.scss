@@ -1,3 +1,5 @@
+@import 'variables';
+
 .modal.in {
   display: block;
 }
@@ -10,7 +12,7 @@
       .sign-in-logo {
         font-family: $logo-font;
         font-size: 3em;
-        margin-left: 40px;
+        margin-left: 0px;
         color: $accent-color;
       }
     }
@@ -115,5 +117,70 @@
   }
   ::-ms-input-placeholder { /* Microsoft Edge */
      color:    #e6e6e6;
+  }
+}
+
+// Media Queries
+// Changes modal for xs mobile screens
+@media (min-width: 300px) and (max-width: 401px) {
+  .modal {
+    .modal-content {
+      .modal-header {
+        .sign-in-logo {
+          margin-left: 0px;
+        }
+      }
+      .modal-footer {
+        height: 100px;
+        background: #fff;
+        padding-top: 20px;
+        p {
+          font-size: 0.8em;
+        }
+      }
+      .modal-body {
+        padding-top: 20px;
+        padding-bottom: 40px;
+        .facebook-button {
+          height: 50px;
+          width: 250px;
+          line-height: 50px;
+          i {
+            font-size: 1.2em;
+            margin-right: 10px;
+          }
+        }
+        .email-button {
+          height: 50px;
+          width: 250px;
+          line-height: 50px;
+          margin-top: -60px;
+          i {
+            font-size: 1.2em;
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 300px) and (max-width: 401px) {
+  #modal-b {
+    .modal-body {
+      padding-top: 0px;
+    }
+    h2 {
+      margin-bottom: 15px;
+    }
+    p {
+      margin-left: 30px;
+    }
+    .name {
+      width: 115px;
+    }
+    .email, .password {
+      width: 250px;
+    }
   }
 }

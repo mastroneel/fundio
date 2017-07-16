@@ -31,24 +31,7 @@
     #mobile-nav svg {
       float: right;
       margin-top: 5px;
-      margin-left: 70px; }
-    #mobile-nav ::-webkit-input-placeholder {
-      /* WebKit, Blink, Edge */
-      color: #0ea77b; }
-    #mobile-nav :-moz-placeholder {
-      /* Mozilla Firefox 4 to 18 */
-      color: #0ea77b;
-      opacity: 1; }
-    #mobile-nav ::-moz-placeholder {
-      /* Mozilla Firefox 19+ */
-      color: #0ea77b;
-      opacity: 1; }
-    #mobile-nav :-ms-input-placeholder {
-      /* Internet Explorer 10-11 */
-      color: #0ea77b; }
-    #mobile-nav ::-ms-input-placeholder {
-      /* Microsoft Edge */
-      color: #0ea77b; } }
+      margin-left: 70px; } }
 @media (min-width: 820px) {
   #mobile-nav {
     display: none; }
@@ -110,10 +93,8 @@
 .dropdown button {
   border: none;
   background: transparent; }
-.dropdown ul {
-  margin-right: 100px; }
-  .dropdown ul li a {
-    color: #0ea77b; }
+.dropdown ul li a {
+  color: #0ea77b; }
 
 .dropdown-menu {
   z-index: 1000; }

@@ -1,67 +1,70 @@
-footer {
+.desktop-footer {
   min-height: 250px;
   margin-top: 100px;
   background: #fff;
   padding-top: 50px;
   padding-left: 80px; }
-  footer .logo {
+  .desktop-footer .logo {
     font-family: "Pacifico", cursive;
     font-size: 3em;
     margin-left: 40px; }
-    footer .logo:hover {
+    .desktop-footer .logo:hover {
       color: #0ea77b; }
-  footer select {
+  .desktop-footer select {
     height: 40px;
     width: 140px;
     margin-left: 30px;
     margin-top: 30px;
     background: #fff;
     border: 1px solid #d8d8d8; }
-    footer select:focus {
+    .desktop-footer select:focus {
       outline: none; }
-  footer h6 {
+  .desktop-footer h6 {
     color: #3c3c3c;
     font-weight: 700;
     font-size: 1.1em;
     margin-bottom: 20px; }
-  footer ul {
+  .desktop-footer ul {
     list-style-type: none;
     margin-left: -40px; }
-    footer ul li {
+    .desktop-footer ul li {
       margin-top: 10px; }
 
 .trending-footer, .nearme-footer {
   margin-top: 1150px; }
 
+.mobile-footer {
+  display: none; }
+
+@media (max-width: 767px) {
+  .desktop-footer {
+    display: none; }
+
+  .mobile-footer {
+    display: block;
+    background: #fff;
+    text-align: center;
+    padding: 20px 0; }
+    .mobile-footer ul {
+      list-style: none;
+      display: inline-flex;
+      margin-left: -40px; }
+      .mobile-footer ul li {
+        margin: 15px 20px; }
+        .mobile-footer ul li i {
+          font-size: 2em; }
+        .mobile-footer ul li .fa-facebook {
+          color: #3b5998; }
+        .mobile-footer ul li .fa-twitter {
+          color: #1da1f2; }
+        .mobile-footer ul li .fa-instagram {
+          color: #262626; } }
 @media (max-width: 1199px) {
   .trending-footer, .nearme-footer {
     margin-top: 1650px; } }
 @media (max-width: 767px) {
   .trending-footer, .nearme-footer {
     margin-top: 3000px; } }
-@media (max-width: 767px) {
-  footer {
-    padding-left: 0; }
-    footer .logo-column {
-      text-align: center; }
-      footer .logo-column .logo {
-        margin-left: 0; }
-      footer .logo-column select {
-        margin-left: 0; }
-    footer .help-column {
-      margin-top: 50px; } }
-@media (max-width: 400px) {
-  footer {
-    padding-left: 0; }
-    footer .logo-column {
-      text-align: center; }
-      footer .logo-column .logo {
-        margin-left: 0; }
-      footer .logo-column select {
-        margin-left: 0; }
-    footer .help-column {
-      margin-top: 50px;
-      font-size: 0.8em; } }
 @media (max-width: 767px) {
   .view-more-button {
     margin-bottom: 150px; } }
