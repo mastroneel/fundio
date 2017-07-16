@@ -9556,5 +9556,132 @@ h1, h1, h3, h4, h5, h6, p {
 @media (max-width: 400px) {
   .about-container .start-fundraiser-button {
     width: 70%; } }
+.start-campaign-nav-right {
+  margin-right: 0; }
+  .start-campaign-nav-right .campaign-type {
+    min-width: 200px;
+    margin-top: -60px;
+    color: #888; }
+    .start-campaign-nav-right .campaign-type .dropdown-menu {
+      padding: 10px; }
+      .start-campaign-nav-right .campaign-type .dropdown-menu a {
+        color: #888; }
+  .start-campaign-nav-right .user-ul {
+    display: inline-flex;
+    list-style: none;
+    margin-top: -65px;
+    color: #888; }
+    .start-campaign-nav-right .user-ul li span {
+      color: #888;
+      font-size: 1.5em;
+      opacity: 0.5; }
+    .start-campaign-nav-right .user-ul .user-dropdown {
+      padding: 10px; }
+    .start-campaign-nav-right .user-ul img {
+      height: 40px;
+      width: 40px;
+      border-radius: 6px;
+      margin-top: -5px;
+      margin-left: 20px; }
+    .start-campaign-nav-right .user-ul .user-name {
+      margin-left: 20px;
+      margin-top: 5px; }
+
+.start-campaign-container {
+  margin: 90px auto;
+  width: 50%;
+  background: #fff;
+  box-shadow: 1px 1px 1px #888;
+  text-align: left;
+  padding: 0; }
+  .start-campaign-container .col-xs-12 {
+    padding-left: 0;
+    padding-right: 0; }
+  .start-campaign-container h2 {
+    color: #888;
+    margin-left: 15px; }
+    .start-campaign-container h2 img {
+      height: 40px;
+      -ms-transform: rotate(-30deg);
+      /* IE 9 */
+      -webkit-transform: rotate(-30deg);
+      /* Chrome, Safari, Opera */
+      transform: rotate(-30deg);
+      margin-left: 10px;
+      opacity: 0.6; }
+  .start-campaign-container .money-container {
+    width: 100%;
+    background: #d2fbef;
+    border-top: 1px solid #a3f7df;
+    border-bottom: 1px solid #a3f7df;
+    padding-bottom: 15px; }
+    .start-campaign-container .money-container i {
+      font-size: 6em;
+      margin: 15px; }
+    .start-campaign-container .money-container input {
+      width: 80%;
+      margin-top: 15px;
+      font-size: 5em;
+      background: transparent;
+      border: none; }
+      .start-campaign-container .money-container input:focus {
+        outline: none; }
+  .start-campaign-container .form-container {
+    text-align: center; }
+    .start-campaign-container .form-container p {
+      text-align: left;
+      margin-left: 40px;
+      margin-top: 20px;
+      font-size: 1.3em; }
+    .start-campaign-container .form-container input {
+      height: 50px;
+      width: 90%;
+      border-radius: 4px;
+      border: 1px solid #dedede;
+      padding-left: 15px; }
+    .start-campaign-container .form-container select {
+      height: 50px;
+      width: 90%;
+      background: transparent;
+      border: 1px solid #dedede; }
+  .start-campaign-container .next-button {
+    width: 250px;
+    height: 50px;
+    background: #0ea77b;
+    border: 1px solid #0ea77b;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 700;
+    line-height: 50px;
+    margin: 40px 0; }
+  .start-campaign-container h6 {
+    margin-bottom: 50px; }
+
+@media (max-width: 1076px) {
+  .start-campaign-container {
+    width: 70%; } }
+@media (max-width: 775px) {
+  .start-campaign-container {
+    width: 90%; } }
+@media (max-width: 599px) {
+  .start-campaign-container {
+    width: 95%; }
+    .start-campaign-container h2 {
+      font-size: 1.5em; } }
+@media (max-width: 417px) {
+  .start-campaign-container {
+    width: 95%; }
+    .start-campaign-container .money-container input {
+      width: 70%; }
+    .start-campaign-container h2 {
+      font-size: 1.2em; } }
+@media (max-width: 399px) {
+  .start-campaign-container {
+    width: 95%; }
+    .start-campaign-container h2 {
+      font-size: 1em; } }
+@media (max-width: 920px) {
+  .start-campaign-nav-right {
+    visibility: hidden; } }
 
 /*# sourceMappingURL=app.css.map */
