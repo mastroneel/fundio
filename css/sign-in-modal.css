@@ -74,7 +74,7 @@
 #modal-b .last-name {
   margin-left: 5px; }
 #modal-b .email, #modal-b .password {
-  width: 320px; }
+  width: 340px; }
 #modal-b ::-webkit-input-placeholder {
   /* WebKit, Blink, Edge */
   color: #e6e6e6; }
