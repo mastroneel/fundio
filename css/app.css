@@ -9734,7 +9734,10 @@ span {
     margin: 0;
     background: #fff;
     text-align: left;
-    border: 1px solid #dedede;
+    border-left: 1px solid #dedede;
+    border-right: 1px solid #dedede;
+    border-bottom: 1px solid #dedede;
+    border-top: 10px solid #0ea77b;
     border-radius: 4px;
     padding: 0 0 20px 0;
     width: 60%;
