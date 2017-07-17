@@ -106,11 +106,13 @@
     .modal .modal-content .modal-body .facebook-button {
       height: 50px;
       width: 250px;
-      line-height: 50px; }
+      line-height: 50px;
+      font-size: 0.9em; }
       .modal .modal-content .modal-body .facebook-button i {
         font-size: 1.2em;
         margin-right: 10px; }
     .modal .modal-content .modal-body .email-button {
+      font-size: 0.9em;
       height: 50px;
       width: 250px;
       line-height: 50px;
