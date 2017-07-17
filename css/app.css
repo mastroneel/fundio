@@ -8839,19 +8839,19 @@ td {
 .modal.in {
   display: block; }
 
-.modal {
+.modal, .sign-in {
   text-align: center;
   border-radius: 4px; }
-  .modal .modal-content .modal-header .sign-in-logo {
+  .modal .modal-content .modal-header .sign-in-logo, .sign-in .modal-content .modal-header .sign-in-logo {
     font-family: "Pacifico", cursive;
     font-size: 3em;
     margin-left: 0px;
     color: #0ea77b; }
-  .modal .modal-content .modal-body {
+  .modal .modal-content .modal-body, .sign-in .modal-content .modal-body {
     background-color: #f3fefb;
     padding-top: 50px;
     padding-bottom: 80px; }
-    .modal .modal-content .modal-body .facebook-button {
+    .modal .modal-content .modal-body .facebook-button, .sign-in .modal-content .modal-body .facebook-button {
       height: 60px;
       width: 340px;
       background: #3b5998;
@@ -8861,12 +8861,12 @@ td {
       font-weight: 700;
       font-size: 1.2em;
       line-height: 60px; }
-      .modal .modal-content .modal-body .facebook-button:focus {
+      .modal .modal-content .modal-body .facebook-button:focus, .sign-in .modal-content .modal-body .facebook-button:focus {
         outline: none; }
-      .modal .modal-content .modal-body .facebook-button i {
+      .modal .modal-content .modal-body .facebook-button i, .sign-in .modal-content .modal-body .facebook-button i {
         font-size: 1.8em;
         margin-right: 30px; }
-    .modal .modal-content .modal-body .email-button {
+    .modal .modal-content .modal-body .email-button, .sign-in .modal-content .modal-body .email-button {
       height: 60px;
       width: 340px;
       background: #0ea77b;
@@ -8876,16 +8876,16 @@ td {
       font-weight: 700;
       font-size: 1.2em;
       line-height: 60px; }
-      .modal .modal-content .modal-body .email-button:focus {
+      .modal .modal-content .modal-body .email-button:focus, .sign-in .modal-content .modal-body .email-button:focus {
         outline: none; }
-      .modal .modal-content .modal-body .email-button i {
+      .modal .modal-content .modal-body .email-button i, .sign-in .modal-content .modal-body .email-button i {
         font-size: 1.8em;
         margin-right: 30px; }
-  .modal .modal-content .modal-footer {
+  .modal .modal-content .modal-footer, .sign-in .modal-content .modal-footer {
     height: 150px;
     background: #fff;
     padding-top: 50px; }
-    .modal .modal-content .modal-footer p {
+    .modal .modal-content .modal-footer p, .sign-in .modal-content .modal-footer p {
       color: #888;
       padding: 0 50px;
       text-align: center; }
@@ -9933,5 +9933,33 @@ span {
     .donation-page-container .donation-form-container .money-container input {
       font-size: 5em;
       width: 30%; } }
+.sign-in {
+  margin-top: 100px;
+  width: 40%;
+  padding: 15px;
+  margin: 100px auto; }
+  .sign-in h2 {
+    margin-top: -20px; }
+  .sign-in .email-sign-in p {
+    text-align: left;
+    margin-top: 20px; }
+  .sign-in .email-sign-in input {
+    width: 90%;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid #dedede; }
+  .sign-in .modal-footer h6 {
+    text-align: center; }
+  .sign-in button {
+    height: 60px;
+    width: 340px;
+    background: #0ea77b;
+    border: 1px solid #0ea77b;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.2em;
+    line-height: 60px;
+    margin-top: 30px; }
 
 /*# sourceMappingURL=app.css.map */
