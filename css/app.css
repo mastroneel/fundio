@@ -8439,19 +8439,49 @@ h1, h1, h3, h4, h5, h6, p {
 
   .carousel-container {
     display: none; } }
-.sub-hero {
-  overflow-x: scroll;
-  width: 96%;
-  margin: 0 auto;
-  text-align: center;
-  font-family: "Open Sans", sans-serif;
-  box-shadow: 1px 1px 1px #969696;
-  border-radius: 4px;
+.table-button-container {
+  width: 95%;
+  margin: 0 auto; }
+
+.table-container {
+  overflow-x: auto;
+  white-space: nowrap;
   color: #888;
-  padding-top: 15px;
-  background-color: #fff; }
-  .sub-hero i {
-    font-size: 2em; }
+  background: #fff; }
+  .table-container i {
+    font-size: 3em;
+    margin-bottom: 10px; }
+
+table, td {
+  border: none; }
+
+td {
+  padding: 25px;
+  text-align: center;
+  font-size: 1.2;
+  min-height: 120px; }
+
+.arrow-left {
+  background: #fff;
+  height: 120px;
+  width: 40px;
+  float: left; }
+  .arrow-left i {
+    font-size: 2em;
+    color: #888;
+    margin-top: 40px;
+    margin-left: 10px; }
+
+.arrow-right {
+  background: #fff;
+  height: 120px;
+  width: 40px;
+  float: right; }
+  .arrow-right i {
+    font-size: 2em;
+    color: #888;
+    margin-top: 40px;
+    margin-left: 10px; }
 
 @media (min-width: 2490px) and (max-width: 3000px) {
   .caption-container {
@@ -8520,12 +8550,9 @@ h1, h1, h3, h4, h5, h6, p {
   #myCarousel .fa-chevron-right {
     position: absolute;
     top: 45%; } }
-@media (min-width: 375px) and (max-width: 929px) {
-  .sub-hero h6 {
-    font-size: 0.7em; } }
-@media (min-width: 300px) and (max-width: 374px) {
-  .sub-hero h6 {
-    font-size: 0.6em; } }
+@media (max-width: 754px) {
+  .arrow-left, .arrow-right {
+    display: none; } }
 .recommended, .trending {
   width: 97%;
   margin: 40px auto;

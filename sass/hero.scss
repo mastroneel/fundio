@@ -193,21 +193,63 @@
   }
 }
 
-.sub-hero {
-  overflow-x: scroll;
-  width: 96%;
+.table-button-container {
+  width: 95%;
   margin: 0 auto;
-  text-align: center;
-  font-family: $main-font;
-  box-shadow: 1px 1px 1px #969696;
-  border-radius: 4px;
-  color: #888;
-  padding-top: 15px;
-  background-color: #fff;
+}
+
+.table-container {
+	overflow-x: auto;
+	white-space: nowrap;
+  color: $main-font-color;
+  background: #fff;
   i {
-    font-size: 2em;
+    font-size: 3em;
+    margin-bottom: 10px;
   }
 }
+
+	table, td {
+		border: none;
+	}
+
+	td {
+		padding: 25px;
+    text-align: center;
+    font-size: 1.2;
+    min-height: 120px;
+	}
+
+.arrow-left {
+  background: #fff;
+  height: 120px;
+  width: 40px;
+  float: left;
+  i {
+    font-size: 2em;
+    color: $main-font-color;
+    margin-top: 40px;
+    margin-left: 10px;
+  }
+}
+
+.arrow-right {
+  background: #fff;
+  height: 120px;
+  width: 40px;
+  float: right;
+  i {
+    font-size: 2em;
+    color: $main-font-color;
+    margin-top: 40px;
+    margin-left: 10px;
+  }
+}
+
+
+
+
+
 
 
 
@@ -346,18 +388,8 @@
 }
 
 // Changes font sizes of sub hero section
-@media (min-width: 375px) and (max-width: 929px) {
-  .sub-hero {
-    h6 {
-      font-size: 0.7em;
-    }
-  }
-}
-
-@media (min-width: 300px) and (max-width: 374px) {
-  .sub-hero {
-    h6 {
-      font-size: 0.6em;
-    }
+@media (max-width: 754px) {
+  .arrow-left, .arrow-right {
+    display: none;
   }
 }

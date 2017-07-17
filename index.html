@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>Fundio</title>
     <link rel="stylesheet" href="css/app.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   </head>
   <body>
     <div class="page-container">
@@ -83,13 +84,9 @@
               <span class="sr-only">Next</span>
             </a>
           </div><!-- /.carousel -->
-
-
-
-
+        </div>
+      </div>
     </div>
-  </div>
-</div>
 
       <div class="mobile-hero">
         <h2>You Can Make a Difference</h2>
@@ -99,69 +96,54 @@
         <form><input type="search" placeholder="Search campaigns..."></form>
       </div>
 
-
-      <div class="row sub-hero">
-        <div class="col-xs-2 col-sm-1">
-          <i class="fa fa-heartbeat" aria-hidden="true"></i>
-          <br>
-          <h6>Medical</h6>
-        </div>
-        <div class="col-xs-2 col-sm-1">
-          <i class="fa fa-users" aria-hidden="true"></i>
-          <br>
-          <h6>Volunteer</h6>
-        </div>
-        <div class="col-xs-2 col-sm-1">
-          <i class="fa fa-ambulance" aria-hidden="true"></i>
-          <br>
-          <h6>Emergencies</h6>
-        </div>
-        <div class="col-xs-2 col-sm-1">
-          <i class="fa fa-book" aria-hidden="true"></i>
-          <br>
-          <h6>Education</h6>
-        </div>
-        <div class="col-xs-2 col-sm-1">
-          <i class="fa fa-heart" aria-hidden="true"></i>
-          <br>
-          <h6>Memorials</h6>
-        </div>
-        <div class="col-xs-2 col-sm-1">
-          <i class="fa fa-futbol-o" aria-hidden="true"></i>
-          <br>
-          <h6>Sports</h6>
-        </div>
-        <div class="col-xs-2 col-sm-1">
-          <i class="fa fa-paw" aria-hidden="true"></i>
-          <br>
-          <h6>Animals</h6>
-        </div>
-        <div class="col-xs-2 col-sm-1">
-          <i class="fa fa-star" aria-hidden="true"></i>
-          <br>
-          <h6>Wishes</h6>
-        </div>
-        <div class="col-xs-2 col-sm-1">
-          <i class="fa fa-trophy" aria-hidden="true"></i>
-          <br>
-          <h6>Competitions</h6>
-        </div>
-        <div class="col-xs-2 col-sm-1">
-          <i class="fa fa-globe" aria-hidden="true"></i>
-          <br>
-          <h6>Travel</h6>
-        </div>
-        <div class="col-xs-2 col-sm-1">
-          <i class="fa fa-question-circle" aria-hidden="true"></i>
-          <br>
-          <h6>Other</h6>
-        </div>
-        <div class="col-xs-2 col-sm-1">
-          <i class="fa fa-hand-peace-o" aria-hidden="true"></i>
-          <br>
-          <h6>Charity</h6>
-        </div>
+      <div class="table-button-container">
+      <span class='arrow-left'><i class="fa fa-chevron-left" aria-hidden="true"></i></span>
+      <span class='arrow-right'><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+      <div class="table-container">
+      	<table>
+      		<tbody>
+      			<tr>
+      				<td><i class="fa fa-heartbeat" aria-hidden="true"></i><br>Medical</td>
+      				<td><i class="fa fa-users" aria-hidden="true"></i><br>Volunteer</td>
+      				<td><i class="fa fa-ambulance" aria-hidden="true"></i><br>Emergencies</td>
+      				<td><i class="fa fa-book" aria-hidden="true"></i><br>Education</td>
+      				<td><i class="fa fa-futbol-o" aria-hidden="true"></i><br>Sports</td>
+      				<td><i class="fa fa-paw" aria-hidden="true"></i><br>Animals</td>
+              <td><i class="fa fa-star" aria-hidden="true"></i><br>Wishes</td>
+              <td><i class="fa fa-trophy" aria-hidden="true"></i><br>Competitions</td>
+              <td><i class="fa fa-globe" aria-hidden="true"></i><br>Travel</td>
+              <td><i class="fa fa-hand-peace-o" aria-hidden="true"></i><br>Charity</td>
+              <td><i class="fa fa-diamond" aria-hidden="true"></i><br>Newlyweds</td>
+              <td><i class="fa fa-sun-o" aria-hidden="true"></i><br>Faith</td>
+              <td><i class="fa fa-paint-brush" aria-hidden="true"></i><br>Creative</td>
+              <td><i class="fa fa-building" aria-hidden="true"></i><br>Community</td>
+              <td><i class="fa fa-calendar-check-o" aria-hidden="true"></i><br>Events</td>
+              <td><i class="fa fa-handshake-o" aria-hidden="true"></i><br>Business</td>
+              <td><i class="fa fa-home" aria-hidden="true"></i><br>Family</td>
+              <td><i class="fa fa-question-circle" aria-hidden="true"></i><br>Other</td>
+      			</tr>
+      		</tbody>
+      	</table>
       </div>
+    </div>
+    </div>
+
+    <script type="text/javascript">
+      // Makes left and right scroll buttons work
+      $(document).ready(function(){
+        $(".arrow-left").click(function(){
+            $(".table-container").animate({scrollLeft: "-="+100});
+        });
+        $(".arrow-right").click(function(){
+            $(".table-container").animate({scrollLeft: "+="+100});
+        });
+      });
+    </script>
+
+
+
+
+
       <div class="recommended">
         <div class="row title-row">
           <div class="col-xs-12">
