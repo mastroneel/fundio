@@ -218,6 +218,9 @@
     text-align: center;
     font-size: 1.2;
     min-height: 120px;
+    a {
+      color: $main-font-color;
+    }
 	}
 
 .arrow-left {

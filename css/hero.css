@@ -178,6 +178,8 @@ td {
   text-align: center;
   font-size: 1.2;
   min-height: 120px; }
+  td a {
+    color: #888; }
 
 .arrow-left {
   background: #fff;
