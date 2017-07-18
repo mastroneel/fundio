@@ -9377,7 +9377,13 @@ td {
     width: 100%; } }
 @media (max-width: 420px) {
   .campaign-container .row {
-    padding: 10px; } }
+    padding: 10px; }
+  .campaign-container .created-by i {
+    margin-left: 5px;
+    font-size: 1em;
+    margin-right: 0; }
+  .campaign-container .created-by h2 {
+    font-size: 1em; } }
 .about-container {
   text-align: center;
   margin: 0 auto;

@@ -225,5 +225,15 @@
     .row {
       padding: 10px;
     }
+    .created-by {
+      i {
+        margin-left: 5px;
+        font-size: 1em;
+        margin-right: 0;
+      }
+      h2 {
+        font-size: 1em;
+      }
+    }
   }
 }
